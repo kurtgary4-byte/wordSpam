@@ -22,37 +22,37 @@
     fgets(choice, sizeof choice, stdin);
      choice[strlen(choice) - 1] = '\0';
 
-    if(strstr(choice, "green") != NULL) {
+    if(strstr(choice, "green") != NULL || strstr(choice, "GREEN")!= NULL || strstr(choice, "Green") != NULL){
 
             while(1 == 1) {
                 printf("\033[0;32m%s\033[0m", word);
             }
         }
-    if(strstr(choice, "red") != NULL){
+    if(strstr(choice, "red") != NULL || strstr(choice, "RED")!= NULL || strstr(choice, "Red") != NULL){
             //green
             while(1 == 1) {
                 printf("\033[0;31m%s\033[0m", word);
             }
         }
-        if(strstr(choice, "yellow") != NULL){
+        if(strstr(choice, "yellow") != NULL || strstr(choice, "YELLOW")!= NULL || strstr(choice, "Yellow") != NULL){
             // yellow
             while(1 == 1) {
                 printf("\033[0;33m%s\033[0m", word);
             } //closes while function
         }
-         if(strstr(choice, "blue") != NULL){
+         if(strstr(choice, "blue") != NULL || strstr(choice, "BLUE") != NULL || strstr(choice, "Blue") != NULL) {
             // blue
             while(1 == 1) {
                 printf("\033[0;34m%s\033[0m", word);
             } //closes while function   
         }
-         if(strstr(choice, "magenta") != NULL){
+         if(strstr(choice, "magenta") != NULL || strstr(choice, "MAGENTA") != NULL || strstr(choice, "Magenta") != NULL){
             // magenta
             while(1 == 1) {
                 printf("\033[0;35m%s\033[0m", word);
             } //closes while function  
         }
-         if(strstr(choice, "cyan") != NULL){
+         if(strstr(choice, "cyan") != NULL || strstr(choice, "CYAN") != NULL || strstr(choice, "Cyan") != NULL){
             // cyan
             while(1 == 1) {
                 printf("\033[0;36m%s\033[0m", word);
